@@ -1,0 +1,42 @@
+
+
+.comment-header{
+    p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+.comment-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    margin-top: 50px;
+    gap: 30px;
+    // border-radius: 10px;
+    margin-bottom: 50px;
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+    }
+    .user-info{
+        border: 1px solid gray;
+        padding: 30px;
+    }
+}
+
+.cards-body{
+    margin: 20px 0px;
+}
+.cards-footer{
+    display: flex;
+    
+    p{
+        margin-left: 10px;
+        .spans{
+            color: #02897A;
+        }
+        // display: flex;
+    }
+}

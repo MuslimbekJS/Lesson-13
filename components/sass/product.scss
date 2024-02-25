@@ -1,0 +1,38 @@
+
+
+
+.product-title{
+    display: flex;
+    justify-content: center;
+    // text-decoration-line: line-through;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    gap: 30px;
+    margin-top: 50px;
+    @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2,1fr);
+        }
+                @media screen and (max-width: 390px) {
+                    grid-template-columns: 1fr;
+                }
+}
+
+.buy-now{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    button{
+        padding: 10px 20px;
+        background-color: #02897A;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}

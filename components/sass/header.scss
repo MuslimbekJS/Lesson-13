@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",
+        sans-serif;
+    transition: all 0.2s;
+}
+
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.nav-logo{
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    h1{
+        margin-left: 10px;
+    }
+
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    // position: fixed;
+
+}
+.nav-ul{
+    @media screen and (max-width: 768px) {
+            display: none;
+        }
+    ul{
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        button{
+            margin-left: 10px;
+            padding: 10px 20px;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 5px;
+            color: #173A56;
+            font-weight: 600;
+        }
+        button:hover{
+            background-color: #02897A;
+            color: white;
+            transition: 0.5s;
+        }
+        li{
+            list-style-type: none;
+            margin-right: 10px;
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+    }
+}

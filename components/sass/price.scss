@@ -1,0 +1,96 @@
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.price-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    // border: 1px solid gray;
+    margin-bottom: 100px;
+    @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    .price{
+        // border: 1px solid #02897A;
+        box-shadow: 0px 0px 10px ;
+        padding: 50px;
+        border-radius: 5px;
+        .btn-order{
+            display: flex;
+            justify-content: center;
+            button{
+                padding: 10px 20px ;
+                background-color: #02897A;
+                color: white;
+                border: none;
+                border-radius: 5px;
+            }
+
+        }
+    }
+    .price:hover{
+        background-color: #02897A;
+        color: white;
+        .span-1 {
+            color: white;
+        }
+        .span-2{
+            color: white;
+        }
+        button{
+            background-color: white;
+            color: #02897A;
+        }
+    }
+    .price-header{
+        h3{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        p{
+            padding: 10px;
+            
+            
+        }
+
+    }
+    .price-body{
+        display: flex;
+        .para{
+            display: grid;
+            grid-template-columns: 1fr;
+            // grid-template-rows: 1fr;
+        }
+        .span-1{
+            font-size: 100px;
+            color: #02897A;
+            font-weight: bolder;
+        }
+        .span-2{
+            font-size: 30px;
+            font-weight: bolder;
+            color: #02897A;
+        }
+        .span-3{
+            font-weight: 200;
+        }
+
+    }
+    .price-footer{
+        padding: 10px;
+        p{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+    }
+}
